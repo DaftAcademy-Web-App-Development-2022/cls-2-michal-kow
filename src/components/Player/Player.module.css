@@ -1,3 +1,35 @@
 .root {
-    @apply p-4
+    @apply p-4 flex flex-row items-center
+}
+
+.timer {
+    @apply flex flex-row
+}
+
+.p {
+    @apply m-1
+}
+
+.bar {
+    @apply h-1 w-52 m-4 relative
+}
+
+.full {
+    @apply h-2 w-full absolute left-0 top-1/2 -translate-y-1/2 bg-neutral-200 rounded-full
+}
+
+.current {
+    @apply h-2 absolute left-0 top-1/2 -translate-y-1/2 bg-purple-500 rounded-full
+}
+
+.playIcon {
+    @apply h-5 w-5
+}
+
+.pauseIcon {
+    @apply h-5 w-5
+}
+
+.speakerIcon {
+    @apply h-5 w-5
 }
