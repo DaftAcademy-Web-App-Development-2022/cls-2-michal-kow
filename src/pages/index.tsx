@@ -2,8 +2,10 @@ import Head from "next/head";
 import { Fragment } from "react";
 
 import { NextPageWithLayout } from "~/types/common.types";
+import playlistData from "~/data/playlistData.json"
 
 import Layout from "~/components/Layout/Layout.component";
+import Main from "~/views/Main/Main.view";
 
 const Home: NextPageWithLayout = () => {
   return (
@@ -14,7 +16,7 @@ const Home: NextPageWithLayout = () => {
       </Head>
 
       <div>
-        <h1>DaftAcademy - WebApp 2022 - tu coś dodaje</h1>
+        <Main items={playlistData} />
       </div>
     </Fragment>
   );
